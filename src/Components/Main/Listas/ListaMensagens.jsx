@@ -1,16 +1,18 @@
 import React, {useEffect, useState} from 'react';
-import Titulo from '../MainComponents/Titulo'
 import { Link } from 'react-router-dom';
+
+import Titulo from '../MainComponents/Titulo'
+import api from '../../../api'
+
 import editar from '../../../assets/img/Icones/Icon_Edit.png'
 import trash from '../../../assets/img/Icones/Icon_Trash.png'
-import api from '../../../api'
 
 export default () => {
 
     const [mensagemCadastrada, setMensagemCadastrada] = useState([])
 
     useEffect(() => {
-            api.get('/Contato').then(res => setMensagemCadastrada(res.data)).catch(err => console.log(err))
+        api.get('/Contato').then(res => setMensagemCadastrada(res.data)).catch(err => console.log(err))
     }, [])
 
     function deletar(img){

@@ -16,18 +16,21 @@ import SydneyIMG from "../../../assets/img/Destinos/Sydney_01.jpg"
 export default () => {
     return (
         <>
-            <CardDestino nome="Buenos Aires" imagem={BuenosIMG} nacionalidade="internacional"></CardDestino>
-            <CardDestino nome="Egito" imagem={EgitoIMG} nacionalidade="internacional"></CardDestino>
-            <CardDestino nome="Gramado" imagem={GramadoIMG} nacionalidade="Nacional"></CardDestino>
-            <CardDestino nome="Índia" imagem={IndiaIMG} nacionalidade="internacional"></CardDestino>
-            <CardDestino nome="Moscow" imagem={MoscowIMG} nacionalidade="internacional"></CardDestino>
-            <CardDestino nome="Noronha" imagem={NoronhaIMG} nacionalidade="Nacional"></CardDestino>
-            <CardDestino nome="Orlando" imagem={OrlandoIMG} nacionalidade="internacional"></CardDestino>
-            <CardDestino nome="Ouro Preto" imagem={OuroPretoIMG} nacionalidade="Nacional"></CardDestino>
-            <CardDestino nome="Paris" imagem={ParisIMG} nacionalidade="internacional"></CardDestino>
-            <CardDestino nome="Rio" imagem={RioIMG} nacionalidade="Nacional"></CardDestino>
-            <CardDestino nome="Salvador" imagem={SalvadorIMG} nacionalidade="Nacional"></CardDestino>
-            <CardDestino nome="Sydney" imagem={SydneyIMG} nacionalidade="internacional"></CardDestino>
+            <CardDestino nome="Buenos-Aires" nome2="#Buenos-Aires" imagem={BuenosIMG} nacionalidade="internacional"></CardDestino>
+            <CardDestino nome="Egito" imagem={EgitoIMG} nacionalidade="internacional" nome2="#Egito"></CardDestino>
+            <CardDestino nome="Gramado" imagem={GramadoIMG} nacionalidade="Nacional" nome2="#Gramado"></CardDestino>
+            <CardDestino nome="Índia" imagem={IndiaIMG} nacionalidade="internacional" nome2="#Índia"></CardDestino>
+            <CardDestino nome="Moscow" imagem={MoscowIMG} nacionalidade="internacional" nome2="#Moscow"></CardDestino>
+            <CardDestino nome="Noronha" imagem={NoronhaIMG} nacionalidade="Nacional" nome2="#Noronha"></CardDestino>
+            <CardDestino nome="Orlando" imagem={OrlandoIMG} nacionalidade="internacional"
+            nome2="#Orlando"></CardDestino>
+            <CardDestino nome="Ouro-Preto" imagem={OuroPretoIMG} nacionalidade="Nacional"
+            nome2="#Ouro-Preto"></CardDestino>
+            <CardDestino nome="Paris" imagem={ParisIMG} nacionalidade="internacional" nome2="#Paris"></CardDestino>
+            <CardDestino nome="Rio" imagem={RioIMG} nacionalidade="Nacional" nome2="#Rio"></CardDestino>
+            <CardDestino nome="Salvador" imagem={SalvadorIMG} nacionalidade="Nacional" nome2="#Salvador"></CardDestino>
+            <CardDestino nome="Sydney" imagem={SydneyIMG} nacionalidade="internacional"
+            nome2="#Sydney"></CardDestino>
         </>
     )
 }

@@ -17,13 +17,13 @@ export default () => {
                 <h2 className="my-4">Administração</h2>
                 <div className="row justify-content-center">
                     <button className="btn btn-secondary col-4 mx-1" style={{ backgroundColor: '#6e44ff'}}>
-                        <Link to="/ListaAgendamentos">
-                            <p>Agendamentos</p>
+                        <Link to="/ListaAgendamentos"  style={{ color: '#fffffe'}} className="nav-link">
+                            Agendamentos
                         </Link>
                     </button>
                     <button className="btn btn-secondary col-4 mx-1" style={{ backgroundColor: '#6e44ff'}}>
-                        <Link to="/ListaMensagens">
-                            <p>Mensagens</p>
+                        <Link to="/ListaMensagens" style={{ color: '#fffffe'}} className="nav-link">
+                            Mensagens
                         </Link>
                     </button>
                 </div>

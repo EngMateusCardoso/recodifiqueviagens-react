@@ -3,6 +3,7 @@ import Titulo from "../MainComponents/Titulo";
 import CardsDestinos from "./CardsDestinos";
 
 export default () => {
+    
     return (
         <>
             {/*Titulo*/}
@@ -14,9 +15,9 @@ export default () => {
                     <div className="col-md-auto border">
                         <h4>Categorias</h4>
                         <ul>
-                            <li onclick="exibir_estes('Nacional')">Nacionais (5)</li>
-                            <li onclick="exibir_estes('Internacional')">Internacionais (7)</li>
-                            <li onclick="exibir_estes('Todos')">Todos (12)</li>
+                            <li>Nacionais (5)</li>
+                            <li>Internacionais (7)</li>
+                            <li>Todos (12)</li>
                         </ul>
                     </div>
                     {/*grid de destinos*/}
