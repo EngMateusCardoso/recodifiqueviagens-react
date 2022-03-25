@@ -42,11 +42,14 @@ export default () => {
                                 <td>{Agendamento.telefone}</td>
                                 <td>{Agendamento.formaPagamento}</td>
                                 <td>
-                                    <Link to="/EditarAgendamento"><img src={editar} alt="Update" width="20px" />
+                                    <Link className="btn" to={`/EditarAgendamentos/${Agendamento.id_Agendamento}`}>
+                                        <img src={editar} alt="Update" width="20px" />
                                     </Link>
                                 </td>
                                 <td>
-                                    <img src={trash} alt="Editar" width="20px" id={Agendamento.id_Agendamento} onClick={(img) => deletar(img)} />
+                                    <div className="btn">
+                                        <img src={trash} alt="Editar" width="20px" id={Agendamento.id_Agendamento} onClick={(img) => deletar(img)} />
+                                    </div>
                                 </td>
                             </tr>
                         ))

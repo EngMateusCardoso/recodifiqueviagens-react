@@ -32,10 +32,10 @@ ReactDOM.render(
         <Route path="/ListaAgendamentos" element={<ListaAgendamentos/>}></Route>
       </Routes>
       <Routes>
-        <Route path="/EditarMensagens" element={<EditarMensagens/>}></Route>
+        <Route path="/EditarMensagens/:id" element={<EditarMensagens/>}></Route>
       </Routes>
       <Routes>
-        <Route path="/EditarAgendamentos" element={<EditarAgendamentos/>}></Route>
+        <Route path="/EditarAgendamentos/:id" element={<EditarAgendamentos/>}></Route>
       </Routes>
     </Router>
     {/*<Contato></Contato>*/}

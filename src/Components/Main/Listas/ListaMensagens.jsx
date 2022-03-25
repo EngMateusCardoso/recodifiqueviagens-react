@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import Titulo from '../MainComponents/Titulo'
@@ -15,7 +15,7 @@ export default () => {
         api.get('/Contato').then(res => setMensagemCadastrada(res.data)).catch(err => console.log(err))
     }, [])
 
-    function deletar(img){
+    function deletar(img) {
         api.delete(`/Contato/${img.target.id}`).then((res) => window.location.reload()).catch((err) => console.log(err))
     }
 
@@ -41,15 +41,17 @@ export default () => {
                                 <td>{mensagemCadastrada.email}</td>
                                 <td>{mensagemCadastrada.msg}</td>
                                 <td>
-                                    {mensagemCadastrada.aceitaReceberNot?'Aceito!':'Não aceito.'}
+                                    {mensagemCadastrada.aceitaReceberNot ? 'Aceito!' : 'Não aceito.'}
                                 </td>
                                 <td>
-                                    <Link to="/EditarMensagens">
-                                        <img src={editar} alt="Update" width="20px" id={mensagemCadastrada.id_Msg} />
+                                    <Link className="btn" to={`/EditarMensagens/${mensagemCadastrada.id_Msg}`}>
+                                        <img src={editar} alt="Update" width="20px" />
                                     </Link>
                                 </td>
-                                <td>
-                                    <img src={trash} alt="trash" width="20px" id={mensagemCadastrada.id_Msg} onClick={(img) => deletar(img)}/>
+                                <td >
+                                    <div className="btn">
+                                        <img src={trash} alt="trash" width="20px" id={mensagemCadastrada.id_Msg} onClick={(img) => deletar(img)} />
+                                    </div>
                                 </td>
                             </tr>
                         ))
