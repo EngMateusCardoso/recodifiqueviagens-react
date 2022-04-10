@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import logonav from '../../assets/img/Logos/Recodifique_Viagens_Logo_Branco-sem_fundo.png';
 
-export default () => {
+const Header = () => {
     return (
         <header>
             {/*<!--Minha NavBar (Barra de navegação)-->*/}
@@ -41,3 +41,5 @@ export default () => {
         </header>
     );
 }
+
+export default Header;

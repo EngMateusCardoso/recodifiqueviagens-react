@@ -1,6 +1,6 @@
 import React from "react";
 
-export default () => {
+const Footer = () => {
     return (
         <footer className="text-center">
             {/*<!-- Meu footer (Rodapé)-->*/}
@@ -9,3 +9,5 @@ export default () => {
         </footer>
     );
 }
+
+export default Footer;
