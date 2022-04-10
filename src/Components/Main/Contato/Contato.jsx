@@ -4,7 +4,7 @@ import Titulo from "../MainComponents/Titulo";
 import ContatoForm from "./ContatoForm";
 
 
-export default () => {
+const Contato = () => {
     return (
         <div>
             <section className="container">
@@ -31,3 +31,5 @@ export default () => {
         </div>
     )
 }
+
+export default Contato;

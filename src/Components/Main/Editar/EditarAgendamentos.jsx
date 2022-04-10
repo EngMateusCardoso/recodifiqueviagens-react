@@ -4,7 +4,7 @@ import { useParams } from "react-router-dom";
 import Titulo from '../MainComponents/Titulo'
 import api from '../../../api';
 
-export default () => {
+const EditarAgendamentos = () => {
 
     const {id} = useParams();
     const nome = useRef();
@@ -66,3 +66,5 @@ export default () => {
         </section>
     )
 }
+
+export default EditarAgendamentos;

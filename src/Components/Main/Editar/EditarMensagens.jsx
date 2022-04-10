@@ -4,7 +4,7 @@ import { useParams } from "react-router-dom";
 import Titulo from '../MainComponents/Titulo'
 import api from '../../../api';
 
-export default () => {
+const EditarMensagens = () => {
 
     const {id} = useParams();
     const nomeDeContato = useRef();
@@ -61,3 +61,5 @@ export default () => {
         </section>
     )
 }
+
+export default EditarMensagens;

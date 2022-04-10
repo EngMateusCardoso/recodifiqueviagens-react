@@ -1,13 +1,15 @@
 import Footer from '../../Components/Footer/Footer'
 import Header from '../../Components/Header/Header'
-import EditarMensagens from '../../Components/Main/Editar/EditarMensagens'
+import Contato from '../../Components/Main/Contato/Contato'
 
-export default () => {
+const ContatoPage = () => {
     return(
         <>
             <Header></Header>
-            <EditarMensagens></EditarMensagens>
+            <Contato></Contato>
             <Footer></Footer>
         </>
     )
 }
+
+export default ContatoPage;

@@ -6,7 +6,7 @@ import OrlandoIMG from "../../../assets/img/Destinos/Orlando_01.jpg";
 import RioIMG from "../../../assets/img/Destinos/Rio_01.jpg";
 import SalvadorIMG from "../../../assets/img/Destinos/Salvador_01.jpg";
 
-export default () => {
+const Promocoes = () => {
     return (
         <div>
             <Titulo titulo="Promoções"></Titulo>
@@ -52,3 +52,5 @@ export default () => {
         </div>
     )
 }
+
+export default Promocoes;

@@ -1,13 +1,15 @@
 import Footer from '../../Components/Footer/Footer'
 import Header from '../../Components/Header/Header'
-import ListaMensagens from '../../Components/Main/Listas/ListaMensagens'
+import Home from '../../Components/Main/Home/Home'
 
-export default () => {
+const HomePage = () => {
     return(
         <>
             <Header></Header>
-            <ListaMensagens></ListaMensagens>
+                <Home></Home>
             <Footer></Footer>
         </>
     )
 }
+
+export default HomePage;

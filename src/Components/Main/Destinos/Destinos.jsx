@@ -2,7 +2,7 @@ import React from "react";
 import Titulo from "../MainComponents/Titulo";
 import CardsDestinos from "./CardsDestinos";
 
-export default () => {
+const Destinos = () => {
     
     return (
         <>
@@ -31,3 +31,5 @@ export default () => {
         </>
     )
 }
+
+export default Destinos;

@@ -1,41 +1,41 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Home from './Pages/Home/Home'
-import Destinos from './Pages/Destinos/Destinos'
-import Promocoes from './Pages/Promocoes/Promocoes'
-import Contato from './Pages/Contato/Contato'
-import ListaMensagens from './Pages/ListaMensagens/ListaMensagens'
-import ListaAgendamentos from './Pages/ListaAgendamentos/ListaAgendamentos'
-import EditarMensagens from './Pages/EditarMensagens/EditarMensagens'
-import EditarAgendamentos from './Pages/EditarAgendamentos/EditarAgendamentos'
+import HomePage from './Pages/Home/HomePage'
+import DestinosPage from './Pages/Destinos/DestinosPage'
+import PromocoesPage from './Pages/Promocoes/PromocoesPage'
+import ContatoPage from './Pages/Contato/ContatoPage'
+import ListaMensagensPage from './Pages/ListaMensagens/ListaMensagensPage'
+import ListaAgendamentosPage from './Pages/ListaAgendamentos/ListaAgendamentosPage'
+import EditarMensagensPage from './Pages/EditarMensagens/EditarMensagensPage'
+import EditarAgendamentosPage from './Pages/EditarAgendamentos/EditarAgendamentosPage'
 import { BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 
 ReactDOM.render(
   <React.StrictMode>
     <Router>
       <Routes>
-        <Route path="/" exact element={<Home/>}></Route>
+        <Route path="/" exact element={<HomePage/>}></Route>
       </Routes>
       <Routes>
-        <Route path="/Destinos" element={<Destinos/>}></Route>
+        <Route path="/Destinos" element={<DestinosPage/>}></Route>
       </Routes>
       <Routes>
-        <Route path="/Promocoes" element={<Promocoes/>}></Route>
+        <Route path="/Promocoes" element={<PromocoesPage/>}></Route>
       </Routes>
       <Routes>
-        <Route path="/Contato" element={<Contato/>}></Route>
+        <Route path="/Contato" element={<ContatoPage/>}></Route>
       </Routes>
       <Routes>
-        <Route path="/ListaMensagens" element={<ListaMensagens/>}></Route>
+        <Route path="/ListaMensagens" element={<ListaMensagensPage/>}></Route>
       </Routes>
       <Routes>
-        <Route path="/ListaAgendamentos" element={<ListaAgendamentos/>}></Route>
+        <Route path="/ListaAgendamentos" element={<ListaAgendamentosPage/>}></Route>
       </Routes>
       <Routes>
-        <Route path="/EditarMensagens/:id" element={<EditarMensagens/>}></Route>
+        <Route path="/EditarMensagens/:id" element={<EditarMensagensPage/>}></Route>
       </Routes>
       <Routes>
-        <Route path="/EditarAgendamentos/:id" element={<EditarAgendamentos/>}></Route>
+        <Route path="/EditarAgendamentos/:id" element={<EditarAgendamentosPage/>}></Route>
       </Routes>
     </Router>
     {/*<Contato></Contato>*/}

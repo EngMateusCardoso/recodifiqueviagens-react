@@ -7,7 +7,7 @@ import api from '../../../api'
 import editar from '../../../assets/img/Icones/Icon_Edit.png'
 import trash from '../../../assets/img/Icones/Icon_Trash.png'
 
-export default () => {
+const ListaAgendamentos = () => {
 
     const [Agendamento, setAgendamento] = useState([])
 
@@ -60,3 +60,5 @@ export default () => {
         </section>
     )
 }
+
+export default ListaAgendamentos;

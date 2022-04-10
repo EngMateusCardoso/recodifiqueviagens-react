@@ -2,7 +2,7 @@ import React from "react";
 import api from '../../../api';
 import { useRef } from "react";
 
-export default (props) => {
+const Cardpromo = (props) => {
 
     const nome = useRef();
     const destino = useRef();
@@ -74,3 +74,5 @@ export default (props) => {
         </>
     )
 }
+
+export default Cardpromo;

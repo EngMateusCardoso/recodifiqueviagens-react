@@ -13,7 +13,7 @@ import RioIMG from "../../../assets/img/Destinos/Rio_01.jpg"
 import SalvadorIMG from "../../../assets/img/Destinos/Salvador_01.jpg"
 import SydneyIMG from "../../../assets/img/Destinos/Sydney_01.jpg"
 
-export default () => {
+const CardDestinos = () => {
     return (
         <>
             <CardDestino nome="Buenos-Aires" nome2="#Buenos-Aires" imagem={BuenosIMG} nacionalidade="internacional"></CardDestino>
@@ -34,3 +34,5 @@ export default () => {
         </>
     )
 }
+
+export default CardDestinos;

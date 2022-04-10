@@ -1,6 +1,6 @@
 import React from "react";
 
-export default (props) => {
+const Texto = (props) => {
     return (
         <>
             <h2 className="text-end">{props.titulo} </h2>
@@ -15,3 +15,5 @@ export default (props) => {
         </>
     )
 }
+
+export default Texto;

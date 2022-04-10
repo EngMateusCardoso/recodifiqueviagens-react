@@ -1,13 +1,15 @@
 import Footer from '../../Components/Footer/Footer'
 import Header from '../../Components/Header/Header'
-import ListaAgendamentos from '../../Components/Main/Listas/ListaAgendamentos'
+import Promocoes from '../../Components/Main/Promocoes/Promocoes'
 
-export default () => {
+const PromocoesPage = () => {
     return(
         <>
             <Header></Header>
-            <ListaAgendamentos></ListaAgendamentos>
+            <Promocoes></Promocoes>
             <Footer></Footer>
         </>
     )
 }
+
+export default PromocoesPage;

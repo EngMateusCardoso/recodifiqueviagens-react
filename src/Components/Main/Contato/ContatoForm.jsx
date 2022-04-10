@@ -2,7 +2,7 @@ import React from "react";
 import api from '../../../api';
 import { useRef } from "react";
 
-function ContatoForm() {
+const ContatoForm = () => {
 
     const nomeDeContato = useRef();
     const email = useRef();

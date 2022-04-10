@@ -2,7 +2,7 @@ import React from "react";
 import Titulo from "./../MainComponents/Titulo";
 import viajante from "./../../../assets/img/Imagens_Home/Home_Mesa_de_viagens.jpg";
 
-export default () => {
+const Home = () => {
     return (
         <div>
             <Titulo titulo="Sobre a Recodifique Viagens"></Titulo>
@@ -24,3 +24,5 @@ export default () => {
         </div>
     )
 }
+
+export default Home;
