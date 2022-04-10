@@ -19,7 +19,7 @@ const EditarMensagens = () => {
             email: email.current.value,
             msg: msg.current.value,
             aceitaReceberNot: aceitaReceberNot.current.checked
-        }).then(res => window.location.href = "http://localhost:3000/ListaMensagens")
+        }).then(res => window.location.href = "https://apirecodifiqueviagens.herokuapp.com/ListaMensagens")
             .catch(err => console.log(err))
     }
 

@@ -19,7 +19,7 @@ const EditarAgendamentos = () => {
             destino: destino.current.value,
             telefone: telefone.current.value,
             formaPagamento: formaPagamento.current.value
-        }).then(res => window.location.href = "http://localhost:3000/ListaAgendamentos")
+        }).then(res => window.location.href = "https://apirecodifiqueviagens.herokuapp.com/ListaAgendamentos")
             .catch(err => console.log(err))
     }
 
